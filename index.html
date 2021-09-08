@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
+	<title>Pallindromic Birthday</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <p class="header">Is your birthday pallindrome?</p>
-	<input type="date" class="dateInput" required/>
-  <button onclick="handleClick()">Check</button>
-  <p class="outputRes"></p>
-    <script src="script.js"></script>
+  <div class="header">
+    <p class="heading">Is your birthday pallindrome?</p>
+    <p class="sub-heading">It will let you check if your birthday is pallindrome or not and get nearest date if not.</p>
+  </div>
+
+  <div class="container">
+    <input type="date" class="dateInput" required/>
+    <button onclick="handleClick()">Check</button>
+    <p class="outputRes"></p>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>

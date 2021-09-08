@@ -1,0 +1,43 @@
+*{
+    margin: 0rem;
+  }
+  
+  .header{
+    padding: 2rem;
+    text-align: center;
+    background-color:#E5E7EB;
+  }
+  
+  .header > .heading{
+    font-size: large;
+    font-weight: bold;
+    color: #4B5563;
+  }
+  
+  .sub-heading{
+    font-size: medium;
+    color: #6B7280;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container > input{
+    padding: 0.5rem;
+    margin: 1.3rem 0rem;
+  }
+  
+  .container > button{
+    padding: 0.5rem;
+    margin: 1.3rem 0rem;
+  }
+  
+  .outputRes{
+    font-size: large;
+    text-align: center;
+    margin-top: 2rem;
+  }

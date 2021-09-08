@@ -1,7 +1,8 @@
 const getDOMElements = () => {
   return {
     dateInput: document.querySelector('.dateInput'),
-    outputRes: document.querySelector(".outputRes")
+    outputRes: document.querySelector(".outputRes"),
+    container: document.querySelector(".container")
   }
 }
 
@@ -166,10 +167,12 @@ const handleClick = () => {
 
     if(checkPallindromeForAllDateFormats(date)){
       getDOMElements().outputRes.innerHTML = "Hurray! your birthday is pallindromic date";
+      getDOMElements().container.style.backgroundColor = "#D1FAE5";
     }
     else{
       const [timeLine,gap,pallindromicDate] = getNearestDate(date);
       getDOMElements().outputRes.innerHTML = "You missed by " + gap + " days from " + timeLine + " date i.e " + constructDate(pallindromicDate);
+      getDOMElements().container.style.backgroundColor = "#FEE2E2";
     }
   }
   else{
